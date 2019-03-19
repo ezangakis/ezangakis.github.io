@@ -1,0 +1,68 @@
+/* properties passed to all classes in this style sheet */
+* {            
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.button{
+    text-align: center;
+    font-size: 20px; 
+    padding: 30px 60px;
+    color: white;
+    font-family: Calibri;
+}
+.button.blue{             
+    background-color: rgba(8, 0, 124, 0.61); 
+}
+.button.blue:hover{
+    background-color: rgba(7, 2, 71, 0.61);
+}
+.button.blue.select{
+    background-color: rgb(20, 3, 248);
+}
+
+.button.red{             
+    background-color: rgba(124, 0, 0, 0.61);
+}
+.button.red:hover{
+    background-color: rgba(71, 2, 2, 0.61);
+}
+.button.red.select{
+    background-color: rgb(255, 5, 5);
+}
+
+.button.green{             
+    background-color: rgba(14, 124, 0, 0.61);
+}
+.button.green:hover{
+    background-color: rgba(2, 71, 5, 0.61);
+}
+.button.green.select{
+    background-color: rgb(1, 255, 14);
+}
+
+.button.yellow{             
+    background-color: rgba(124, 95, 0, 0.61);
+}
+.button.yellow:hover{
+    background-color: rgba(71, 64, 2, 0.61);
+}
+.button.yellow.select{
+    background-color: rgb(255, 197, 6);
+}
+
+.startbutton{
+    background-color: rgba(124, 0, 118, 0.61);
+    text-align: center;
+    font-size: 20px; 
+    padding: 5px 15px;
+    color: white;
+    font-family: Calibri; 
+}
+.startbutton:hover{
+    background-color: rgba(199, 0, 189, 0.61);
+}

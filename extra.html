@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- If you are reading this, Evan says hi :) -->
+<head>
+	<title>Evan Zangakis | Extras</title>
+
+	<!-- style sheet for main text -->
+	<link href = "main.css" rel="stylesheet" type="text/css">
+	<link href = "extra.css" rel="stylesheet" type="text/css"> 
+	<script src = "js/simon.js"></script>
+</head>
+<style>
+html{
+    width:100%; height:100%;
+}
+body{
+    width:100%; height:100%;
+	background-image: url('images/Earthrise_website.png');
+
+	/* Center and scale the image nicely */
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-color: rgb(0,0,0);
+	
+	
+}
+</style>
+<body>
+
+<div class="navbar">
+		<a href="index.html" style="margin-left: 2%;">Greeting</a>
+		<a href = "about-me.html">About Me</a>
+		<a href = "experience.html">Experience and Projects</a>
+		<a class="active" href = "extra.html">Just for You</a>
+		<a href="contact.html">Contact</a>
+		<a style="float:right; font-style:italic; margin-right: 50px;" href="documents/Zangakis_S_2019.pdf" target="_blank"> Résumé </a>
+</div>
+
+<h1 style="font-size:60px; padding-top:100px; margin-left:30px; color:white; font-family: 'Verdana', Sans-serif">Let's Play Simon!</h1>
+<div style="text-align:center">
+	<br>
+	<p style ="color:white; background-color: rgba(0,0,0, 0.4); font-family: 'Verdana', Sans-serif;">The rules are simple. Simon will tell you a series of buttons to press.
+		 When he's done, repeat them backt to him by clicking them in the same order they were flashed to you!
+		 Simon starts off by flashing one button, and for every successful repetition, he'll repeat his previous button flashes
+		 and add one more flash at the end. Get started and test your memory!
+	</p>
+	<br><br>
+	<p style = "color:white; font-size:20px" id="update">Level 1</p>
+	<button type="button" id = "blue" class = "button blue" onclick="blueButton()" ></button>
+	<br>
+	<button type="button" id = "red" class = "button red" onclick="redButton()" ></button>
+	<button type="button" id = "green" class = "button green" onclick="greenButton()" ></button>
+	<br>
+	<button type="button" id = "yellow" class = "button yellow" onclick="yellowButton()" ></button>
+	<P style="color:white; font-size: 15px" id = "counter"></P>
+	<p style="color:white; font-size: 30px" id="score">Score: 0</p>
+	<button type="button" id = "start" class = "startbutton" onclick="startGame()" >Click to Start</button>
+</div>
+
+
+</body>
+</html>

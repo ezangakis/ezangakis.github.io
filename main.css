@@ -1,0 +1,90 @@
+/* properties passed to all classes in this style sheet */
+* {            
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100; /* keeps navbar on top of everything (issue with leaflet map) */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    float:top;
+}
+
+ /* navbar is the navigation bar at the top housing links to different pages on the site */
+.navbar a{             
+    text-decoration:none;
+    float: left;
+    text-align: center;
+    font-size: 20px; 
+    padding: 5px 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-bottom: 1%;
+    font-family: Calibri;
+}
+.navbar a:hover{
+    background-color: rgba(9, 8, 83, 0.7);
+}
+
+.navbar a.active{
+    background-color: rgba(10, 6, 226, 0.8);
+    color: white;
+}
+
+/* main: the main block of text on the page */
+.main{
+    font-family: "Verdana", Sans-serif;
+    width:90%;
+    height: 400px; 
+    color:white;
+    padding-top: 150px;
+    text-align:left;
+    padding-left:80px;
+   /* padding-right: 20px; */
+}
+.main p{
+   /* text-align:center;*/
+    font-size: 20px;
+    color:  rgba(255, 255, 255, 0.4);
+    padding-left: 80px;
+    
+}
+.main h1{
+    font-size: 60px;
+    display:inline-block;
+}
+.main h2{
+    font-size: 30px; 
+    color:  rgba(255, 255, 255, 0.4);
+
+}
+
+/* for map */
+.place{
+    font-weight: bold;
+}
+
+.place:hover{
+    color:rgba(255, 255, 255, 0.7);
+
+}
+
+.mapview{
+    height: 250px; 
+    width:350px; 
+    padding-top:200px; 
+    padding-right:200px;
+    margin-right: 60px;
+    float:left; 
+    z-index:1; 
+   /* opacity: 0.85;*/
+   
+}

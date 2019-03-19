@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- If you are reading this, Evan says hi :) -->
+<head>
+	<title>Usbwebserver</title>
+
+    <!-- style sheet for main text -->
+	<link href = "main.css" rel="stylesheet" type="text/css"> 
+
+     <!-- leaflet.js stylesheet + JavaScript -->
+     <link rel="stylesheet" href="leaflet/leaflet.css"/>
+	 <script src="leaflet/leaflet.js"></script>
+
+</head>
+<style>
+html{
+    width:100%; height:100%;
+}
+body{
+    width:100%; height:100%;
+	background-image: url('images/Earthrise_website.png');
+
+	/* Center and scale the image nicely */
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-color: rgb(0,0,0);
+	
+	
+}
+</style>
+<body>
+
+<div class="navbar">
+		<a href="index.html" style="margin-left: 2%;">Greeting</a>
+		<a class="active" href = "about-me.html">About Me</a>
+		<a href = "experience.html">Experience and Projects</a>
+		<a href = "extra.html">Just for You</a>
+		<a href="contact.html">Contact</a>
+		<a style="float:right; font-style:italic; margin-right: 50px;" href="documents/Zangakis_S_2019.pdf" target="_blank"> Résumé </a>
+</div>
+
+<h1 style="font-size:60px; padding-top:100px; margin-left:30px; color:white; font-family: 'Verdana', Sans-serif">Who I am </h1>
+<div class ="main" style="padding-top:50px;">
+	<br>
+    <!-- Leaflet.Map HTML-->
+	<div id="mapid" class="mapview"></div>
+
+	<!-- Map paragraph -->
+	<div style="display:block;">
+		<br><br>	
+		<p style="color:black; background-color: rgba(255,255,255, 0.6);"> 
+			I attend my studies at&nbsp;
+		<a class ="place" id="temple_u" onclick="goToTemple()">Temple University.&nbsp;</a>
+			I am a junior honors physics major who is minoring in computer science. I have always had an afinity for space and astronomy.
+			By studying physics, I was not only able to learn to ask questions about the natural world, but also gain the skillset
+			to answer these queries. The problem-solving, critical-thinking, mathematics, physics, and programming
+			skills learned in both my major and minor will translate well into either data science and web/software development!</p>
+		<br>
+		<p style="color:white; background-color: rgba(0,0,0, 0.6);"> 
+			Growing up in the&nbsp;
+		<a class ="place" id="temple_u" onclick="goToNos()">Poconos,&nbsp;</a>
+			I spent a lot of time outdoors. Whether I was exploring the woods with my siblings, chasing my dogs 
+			in my backyard, or playing sports with friends, the fresh mountain air always surrounded me. No other passtime was more to 
+			my liking than looking up at the stars at night, however. Pondering just how vast the universe is to this day instills a sense of
+			wonder and possibility. I take every oportunity to explore and improve the world around me.
+		</p>
+	</div>
+</div>
+
+<!-- Leaflet.Map JS-->
+<script src="js/mymap.js">
+	//gives map details to <div id="mapid"> i.e maps the map
+	//was acting up when placed in header of file
+</script>
+
+</body>
+</html>
