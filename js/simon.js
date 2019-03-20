@@ -6,7 +6,7 @@ var counter = 0;
 
 /* Chooses a new button based on current time (i.e randomly) */
 function chooseNew(){
-  var seconds = (new Date().getTime()) % 4;
+  var seconds = ~~Math.abs((new Date().getTime()/100) % 4); //~~ for whole number, Math.abs to return positive value 
   memArr.push(seconds);
 }
 
